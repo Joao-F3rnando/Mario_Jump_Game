@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <title>Mario Jump</title>
+</head>
+
+<body>
+    <div class="gameBoard day">
+        <img src="./images/clouds.png" class="clouds">
+        <img src="./images/pipe.png" class="pipe">
+        <img src="./images/mario.gif" class="mario">
+    </div>
+
+    <div class="gameBoardAway">
+        <div class="left">
+            <p class="difficulty"></p>
+            <div>
+                <select name="difficulty" class="block" id="difficulty">
+                    <option value="">Alterar?</option>
+                    <option value="easy" id="easy">Fácil</option>
+                    <option value="medium" id="medium">Médio</option>
+                    <option value="hard" id="hard">Díficil</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="right">
+            <P class="points"></P>
+            <p class="poins" id="HI"></p>
+            <div>
+                <button class="restartButton block">Jogar Novamente?</button>
+                <button class="clearHI block">Limpar High Score?</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
