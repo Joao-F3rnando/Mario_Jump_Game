@@ -12,6 +12,11 @@ if(localStorage.getItem('speedPine') == null || localStorage.getItem('speedPine'
     document.querySelector('.difficulty').innerText = 'Dificuldade: Fácil'
 }
 
+if(localStorage.getItem('HI') == null)
+{
+    localStorage.setItem('HI', 0)
+}
+
 else if(localStorage.getItem('speedPine') == 1.5)
 {
     document.querySelector('.difficulty').innerText = 'Dificuldade: Média'
